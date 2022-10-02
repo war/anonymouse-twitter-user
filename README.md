@@ -5,12 +5,6 @@ Run with this command:
 yarn watch
 ```
 
-# Dependancies
-
-```
-yarn
-```
-
 # Quickstart guide:
 
 Run with this command:
