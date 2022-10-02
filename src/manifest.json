@@ -1,0 +1,22 @@
+{
+  "name": "Anonymous Twitter User",
+  "description": "Hides your Twitter username from the public. Ideal for people who want to keep their Twitter account private.",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "bookmarks"
+  ],
+  "host_permissions": [
+    "http://*.twitter.com/*"
+  ],
+  "optional_host_permissions": [
+    "*://*/*"
+  ]
+}

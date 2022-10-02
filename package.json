@@ -1,0 +1,21 @@
+{
+  "name": "anonymous-twitter-user",
+  "version": "0.0.1",
+  "license": "GPL",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "parcel": "^2.0.0-rc.0",
+    "postcss-import": "^14.0.2"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "crx-hotreload": "^1.0.6",
+    "tailwindcss": "^2.2.9"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist .cache .parcel-cache",
+    "build:tailwind": "tailwindcss build src/style.css -c ./tailwind.config.js -i src/style.css -o dist/style.css",
+    "watch": "yarn build:tailwind && parcel watch --no-hmr src/{background.js,popup.html}",
+    "build": "yarn build:tailwind && cp ./src/manifest.json ./dist/manifest.json && parcel build src/{background.js,popup.html}"
+  }
+}
