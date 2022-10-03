@@ -11,7 +11,8 @@
   },
   "permissions": [
     "tabs",
-    "bookmarks"
+    "bookmarks",
+    "storage"
   ],
   "host_permissions": [
     "http://*.twitter.com/*"

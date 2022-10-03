@@ -1,4 +1,4 @@
-# anonymouse-twitter-user
+# anonymouse-twitter-user (chrome addon)
 
 Run with this command:
 ```
