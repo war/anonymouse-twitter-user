@@ -30,7 +30,7 @@
           <div class="space-y-6 sm:space-y-5">
             <div>
               <h3 class="text-lg font-medium leading-6 text-gray-900">Profile</h3>
-              <p class="mt-1 max-w-2xl text-sm text-gray-500">This information will be displayed publicly so be careful what you share.</p>
+              <p class="mt-1 max-w-2xl text-sm text-gray-500">Text Text Text Text Text.</p>
             </div>
             <div class="space-y-6 sm:space-y-5">
               <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5">
@@ -95,21 +95,42 @@
 
           <div class="space-y-6 pt-8 sm:space-y-5 sm:pt-10">
             <div>
-              <h3 class="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
-              <p class="mt-1 max-w-2xl text-sm text-gray-500">Use a permanent address where you can receive mail.</p>
+              <h3 class="text-lg font-medium leading-6 text-gray-900">Hide Options</h3>
+              <p class="mt-1 max-w-2xl text-sm text-gray-500">Text Text Text Text Text.</p>
             </div>
             <div class="space-y-6 sm:space-y-5">
               <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5">
                 <label for="first-name" class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">First name</label>
                 <div class="mt-1 sm:col-span-2 sm:mt-0">
-                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full max-w-lg rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:max-w-xs sm:text-sm">
+                  <button type="button" class="bg-gray-200 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" role="switch" aria-checked="false">
+                    <span class="sr-only">Use setting</span>
+                    <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
+                    <span class="translate-x-0 pointer-events-none relative inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out">
+                      <!-- Enabled: "opacity-0 ease-out duration-100", Not Enabled: "opacity-100 ease-in duration-200" -->
+                      <span class="opacity-100 ease-in duration-200 absolute inset-0 flex h-full w-full items-center justify-center transition-opacity" aria-hidden="true">
+                        <svg class="h-3 w-3 text-gray-400" fill="none" viewBox="0 0 12 12">
+                          <path d="M4 8l2-2m0 0l2-2M6 6L4 4m2 2l2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <!-- Enabled: "opacity-100 ease-in duration-200", Not Enabled: "opacity-0 ease-out duration-100" -->
+                      <span class="opacity-0 ease-out duration-100 absolute inset-0 flex h-full w-full items-center justify-center transition-opacity" aria-hidden="true">
+                        <svg class="h-3 w-3 text-indigo-600" fill="currentColor" viewBox="0 0 12 12">
+                          <path d="M3.707 5.293a1 1 0 00-1.414 1.414l1.414-1.414zM5 8l-.707.707a1 1 0 001.414 0L5 8zm4.707-3.293a1 1 0 00-1.414-1.414l1.414 1.414zm-7.414 2l2 2 1.414-1.414-2-2-1.414 1.414zm3.414 2l4-4-1.414-1.414-4 4 1.414 1.414z" />
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
                 </div>
               </div>
 
               <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5">
                 <label for="last-name" class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">Last name</label>
                 <div class="mt-1 sm:col-span-2 sm:mt-0">
-                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full max-w-lg rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:max-w-xs sm:text-sm">
+                  <button type="button" class="bg-gray-200 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" role="switch" aria-checked="false">
+                    <span class="sr-only">Use setting</span>
+                    <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
+                    <span aria-hidden="true" class="translate-x-0 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+                  </button>
                 </div>
               </div>
 
@@ -248,6 +269,6 @@
       </form>
     </div>
 
-    <script src="popup.js"></script>
+    <script src="popup.js" type="module"></script>
   </body>
 </html>
